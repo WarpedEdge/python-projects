@@ -1,7 +1,7 @@
 # python-projects
 Personal repository for all python related projects.
 
-## Data Types:
+## [Data Types](https://www.w3schools.com/python/python_datatypes.asp)
 
 ```
 str = string text which can be anything from "hello", "hi", "89", or "8.9"
@@ -10,7 +10,7 @@ float = decimals like 6.0, 7.5, -9.8
 bool = boolean which are True and False conditions
 ```
 
-## Arithmetics
+## [Arithmetic Operators](https://www.w3schools.com/python/gloss_python_arithmetic_operators.asp)
 ```
 * = multiplication
 ** = raise to the power of
@@ -33,7 +33,7 @@ z = x % y -> 1 due to the ramainder of how many times 2 can go into 5 which is 2
 z = x // y if x was 7 and y was 2, how many times can 2 going into 7 which is 3 times, so the answer is 3
 ```
 
-## Comparison Operators 
+## [Conditions](https://www.w3schools.com/python/python_conditions.asp) 
 ```
 <  greater than
 >  less than
@@ -41,10 +41,7 @@ z = x // y if x was 7 and y was 2, how many times can 2 going into 7 which is 3 
 >=  less than or equal to
 ==  is equal to
 !=   is NOT equal to
-```
 
-## Conditions 
-```
 if = self explanatory
 else = if the "if" condition is not met do this
 elif = is short for "else if" allowing multiple conditions. You can have multiple elifs
@@ -60,7 +57,7 @@ else:
     print("You are not old enough to play...")
 ```
 
-## Variables
+## [Variables](https://www.learnpython.org/en/Variables_and_Types)
 Variables can only be lowercase letters, uppercase letters, underscores, and numbers. 
 ```
 hello1 = 9 
@@ -68,7 +65,7 @@ hello1 = 9
 1hello = 9 <- does not work
 ```
 
-## Methods
+## [Methods](https://stackoverflow.com/questions/3786881/what-is-a-method-in-python)
 ```
 .lower() = will make the input right after all lowercased
 .upper() = will make the input right after all uppercased
@@ -84,7 +81,7 @@ The `.lower()` at the end of the line below will make whichever response given t
         print("Goodbye!")
 ```
 
-## Logical Operators
+## [Logical Operators](https://www.w3schools.com/python/gloss_python_logical_operators.asp)
 `and` = If both things left and right are true then it will show as true, but if one is false then the result is false
 `or` = Looks at the left and right side and if both are met the entire thing is true
 
@@ -96,7 +93,16 @@ True or False -> True
 5 == 5 or 7 == 7 -> False
 ```
 
-## Defining functions and importing them from another file
+## [Built-in Functions](https://docs.python.org/3/library/functions.html)
+```
+print() => Prints to the standard output device
+intput() => Asks user for input
+set() => Returns a new set
+int() => Converts value into an integer number
+str() => Converts value into a string
+```
+
+## [Defining functions and importing them from another file](https://www.learnpython.org/en/Functions)
 `def` = refers to the the start of a function you want to define
 
 `from <file> import <function>` = Putting this anywhere in your file will import specific functions from those files that have been defined. This can be anywhere from function to function1, function2, function3, etc. or * meaning all def's in that file
