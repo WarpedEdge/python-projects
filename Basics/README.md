@@ -119,6 +119,23 @@ The above is a quick def created in a file called something like adventure.py wh
 
 This will allow the main.py to use the def function created in Game/adventure.py which then can be called upon using the game_start
 
+## [Try and Except](https://www.w3schools.com/python/python_try_except.asp)
+`try` = is a block of code that will attempt to run
+
+When an error occurs, or exception as we call it, Python will normally stop and generate an error message.
+
+`except` = is a block of code that will run if there is an error in the try block
+
+## Examples
+The try block will generate an exception, because x is not defined:
+```
+try:
+  print(x)
+except:
+  print("An exception occurred")
+```
+
+
 ## [Classes and Objects](https://www.learnpython.org/en/Classes_and_Objects)
 `class` = is a blueprint for creating objects
 
@@ -129,6 +146,7 @@ This will allow the main.py to use the def function created in Game/adventure.py
 Creating a class called User with a few attributes and methods (methods are essentially
 functions that are part of a class)
 ```
+
 class User:
     def __init__(self, user_email, name, password, current_job_title):
         self.email = user_email
