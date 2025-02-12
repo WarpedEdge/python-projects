@@ -1,5 +1,5 @@
 my_set = {"January", "February", "March"}
-# Printing sets are in random order unlike lists
+# Printing sets are in random order unlike my_list
 print(my_set)
 for element in my_set:
     print(element)

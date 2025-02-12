@@ -118,3 +118,44 @@ The above is a quick def created in a file called something like adventure.py wh
 `from Game.adventure import game_start`
 
 This will allow the main.py to use the def function created in Game/adventure.py which then can be called upon using the game_start
+
+## [Classes and Objects](https://www.learnpython.org/en/Classes_and_Objects)
+`class` = is a blueprint for creating objects
+
+`object` = is an instance of a class
+
+### Examples
+
+Creating a class called User with a few attributes and methods (methods are essentially
+functions that are part of a class)
+```
+class User:
+    def __init__(self, user_email, name, password, current_job_title):
+        self.email = user_email
+        self.name = name
+        self.password = password
+        self.current_job_title = current_job_title
+
+    def change_password(self, new_password):
+        self.password = new_password
+
+    def change_job_title(self, new_job_title):
+        self.current_job_title = new_job_title
+
+    def get_user_info(self):
+        print(f"User {self.name} currently works as a {self.current_job_title}. You can contact them at {self.email}")
+```
+The __init__ method is a special method that is called when the object is created.
+It is used to initialize the object's attributes. The self parameter refers to the object itself.
+It is then called like this
+```
+from user import User
+
+app_user_one = User("rb@rb.com", "Richard B", "pwd1", "DevOps Engineer")
+app_user_one.get_user_info()
+
+app_user_two = User("cb@cb.com", "Chloe B", "supersecretmeatballs", "Financial Advisor")
+app_user_two.get_user_info()
+```
+Lowercase user is the file name and uppercase User is the class name. 
+You then can call Class just like a function with its parameters.
